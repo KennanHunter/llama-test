@@ -3,7 +3,7 @@ on:
 
 jobs:
   build:
-    runs-on: "x86_64-apple-darwin"
+    runs-on: "macos-latest"
 
     steps:
       - uses: actions/checkout@v4
