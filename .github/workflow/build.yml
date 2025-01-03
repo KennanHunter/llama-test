@@ -1,0 +1,15 @@
+jobs:
+  build:
+    runs-on: "x86_64-apple-darwin"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: cargo build --release
+
+      - name: Upload target build folder on failure
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-upload
+          path: ./target/
