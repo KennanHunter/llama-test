@@ -10,9 +10,9 @@ jobs:
 
       - run: cargo build --release
 
-      - name: Upload target build folder on failure
-        if: ${{ failure() }}
+      - name: Upload target build folder
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: failed-upload
+          name: target
           path: ./target/
