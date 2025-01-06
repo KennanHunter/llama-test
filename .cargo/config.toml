@@ -1,5 +1,19 @@
 [target.x86_64-apple-darwin]
-rustflags = ["-C", "-fopenmp", "link-arg=-fuse-ld=lld"]
+rustflags = [
+    "-C",
+    "link-arg=-fuse-ld=lld",
+    "-C",
+    "link-arg=-fopenmp",
+    "-C",
+    "link-arg=-L/opt/homebrew/opt/libomp/lib",
+]
 
 [target.aarch64-apple-darwin]
-rustflags = ["-C", "-fopenmp", "link-arg=-fuse-ld=lld"]
+rustflags = [
+    "-C",
+    "link-arg=-fuse-ld=lld",
+    "-C",
+    "link-arg=-fopenmp",
+    "-C",
+    "link-arg=-L/opt/homebrew/opt/libomp/lib",
+]
