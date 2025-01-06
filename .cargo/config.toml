@@ -15,5 +15,5 @@ rustflags = [
     "-C",
     "link-arg=-fopenmp",
     "-C",
-    "link-arg=\"-L /opt/homebrew/opt/libomp/lib\"",
+    "\"link-arg=\"-L /opt/homebrew/opt/libomp/lib\"\"",
 ]
