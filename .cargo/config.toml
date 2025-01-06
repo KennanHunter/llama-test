@@ -3,7 +3,7 @@ rustflags = [
     # "-C",
     # "link-arg=-fuse-ld=lld",
     "-l",
-    "static=/opt/homebrew/opt/libomp/lib/libomp.a",
+    "dylib=/opt/homebrew/opt/libomp/lib/libomp.dylib",
 ]
 
 [target.aarch64-apple-darwin]
@@ -11,5 +11,5 @@ rustflags = [
     # "-C",
     # "link-arg=-fuse-ld=lld",
     "-l",
-    "static=/opt/homebrew/opt/libomp/lib/libomp.a",
+    "dylib=/opt/homebrew/opt/libomp/lib/libomp.dylib",
 ]
